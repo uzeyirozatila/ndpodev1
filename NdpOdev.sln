@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1082
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KayisiAdamOyunu", "KayısıAdamOyunu\KayisiAdamOyunu.csproj", "{AAE8D78D-0C7E-4185-B393-CF15FD426BBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OyunKutuphanesi", "OyunKutuphanesi\OyunKutuphanesi.csproj", "{46D750C7-C17E-4763-B476-85B242133A91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAE8D78D-0C7E-4185-B393-CF15FD426BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE8D78D-0C7E-4185-B393-CF15FD426BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE8D78D-0C7E-4185-B393-CF15FD426BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE8D78D-0C7E-4185-B393-CF15FD426BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D750C7-C17E-4763-B476-85B242133A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D750C7-C17E-4763-B476-85B242133A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D750C7-C17E-4763-B476-85B242133A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D750C7-C17E-4763-B476-85B242133A91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA4F8E07-CD2D-4740-9FAF-8F75027645E5}
+	EndGlobalSection
+EndGlobal
