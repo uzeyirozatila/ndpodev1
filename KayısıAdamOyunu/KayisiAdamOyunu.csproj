@@ -86,5 +86,11 @@
     <Content Include="kayısı.ico" />
     <Content Include="kayısıvektörel.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OyunKutuphanesi\OyunKutuphanesi.csproj">
+      <Project>{46d750c7-c17e-4763-b476-85b242133a91}</Project>
+      <Name>OyunKutuphanesi</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

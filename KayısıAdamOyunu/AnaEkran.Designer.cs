@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaEkran));
             this.BilgiPl = new System.Windows.Forms.Panel();
+            this.SkorShowLb = new System.Windows.Forms.Label();
+            this.SkorBtn = new System.Windows.Forms.Button();
+            this.SkorLb = new System.Windows.Forms.Label();
+            this.BilgiLb = new System.Windows.Forms.Label();
             this.KahramanPl = new System.Windows.Forms.Panel();
             this.SavasPl = new System.Windows.Forms.Panel();
-            this.BilgiLb = new System.Windows.Forms.Label();
-            this.SkorLb = new System.Windows.Forms.Label();
-            this.SkorBtn = new System.Windows.Forms.Button();
-            this.SkorShowLb = new System.Windows.Forms.Label();
             this.BilgiPl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,8 +49,53 @@
             this.BilgiPl.Dock = System.Windows.Forms.DockStyle.Top;
             this.BilgiPl.Location = new System.Drawing.Point(0, 0);
             this.BilgiPl.Name = "BilgiPl";
-            this.BilgiPl.Size = new System.Drawing.Size(1222, 88);
+            this.BilgiPl.Size = new System.Drawing.Size(1222, 109);
             this.BilgiPl.TabIndex = 0;
+            // 
+            // SkorShowLb
+            // 
+            this.SkorShowLb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SkorShowLb.AutoSize = true;
+            this.SkorShowLb.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SkorShowLb.Location = new System.Drawing.Point(1160, 79);
+            this.SkorShowLb.Name = "SkorShowLb";
+            this.SkorShowLb.Size = new System.Drawing.Size(52, 17);
+            this.SkorShowLb.TabIndex = 4;
+            this.SkorShowLb.Text = "label3";
+            // 
+            // SkorBtn
+            // 
+            this.SkorBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SkorBtn.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SkorBtn.Location = new System.Drawing.Point(1045, 3);
+            this.SkorBtn.Name = "SkorBtn";
+            this.SkorBtn.Size = new System.Drawing.Size(167, 48);
+            this.SkorBtn.TabIndex = 3;
+            this.SkorBtn.Text = "En İyi Skorlar";
+            this.SkorBtn.UseVisualStyleBackColor = true;
+            // 
+            // SkorLb
+            // 
+            this.SkorLb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SkorLb.AutoSize = true;
+            this.SkorLb.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SkorLb.Location = new System.Drawing.Point(1088, 79);
+            this.SkorLb.Name = "SkorLb";
+            this.SkorLb.Size = new System.Drawing.Size(42, 17);
+            this.SkorLb.TabIndex = 2;
+            this.SkorLb.Text = "Skor";
+            // 
+            // BilgiLb
+            // 
+            this.BilgiLb.AutoSize = true;
+            this.BilgiLb.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BilgiLb.Location = new System.Drawing.Point(3, 9);
+            this.BilgiLb.Name = "BilgiLb";
+            this.BilgiLb.Size = new System.Drawing.Size(614, 120);
+            this.BilgiLb.TabIndex = 0;
+            this.BilgiLb.Text = "Oyunu başlatmak için ENTER tuşuna basınız.\r\nDurdurmak için CAPSLOCK tuşunu kullan" +
+    "ınız.\r\nKahramanı haraket ettirmek için YÖN tuşlarını kullanınız.\r\nAteş etmek içi" +
+    "n BOŞLUK tuşuna basınız\r\n\r\n";
             // 
             // KahramanPl
             // 
@@ -65,54 +110,10 @@
             // 
             this.SavasPl.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.SavasPl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SavasPl.Location = new System.Drawing.Point(0, 88);
+            this.SavasPl.Location = new System.Drawing.Point(0, 109);
             this.SavasPl.Name = "SavasPl";
-            this.SavasPl.Size = new System.Drawing.Size(1222, 657);
+            this.SavasPl.Size = new System.Drawing.Size(1222, 636);
             this.SavasPl.TabIndex = 2;
-            // 
-            // BilgiLb
-            // 
-            this.BilgiLb.AutoSize = true;
-            this.BilgiLb.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BilgiLb.Location = new System.Drawing.Point(3, 9);
-            this.BilgiLb.Name = "BilgiLb";
-            this.BilgiLb.Size = new System.Drawing.Size(614, 72);
-            this.BilgiLb.TabIndex = 0;
-            this.BilgiLb.Text = "Oyunu başlatmak için ENTER tuşuna basınız.\r\nKahramanı haraket ettirmek için YÖN t" +
-    "uşlarını kullanınız.\r\nAteş etmek için BOŞLUK tuşuna basınız\r\n";
-            // 
-            // SkorLb
-            // 
-            this.SkorLb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SkorLb.AutoSize = true;
-            this.SkorLb.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.SkorLb.Location = new System.Drawing.Point(1099, 64);
-            this.SkorLb.Name = "SkorLb";
-            this.SkorLb.Size = new System.Drawing.Size(42, 17);
-            this.SkorLb.TabIndex = 2;
-            this.SkorLb.Text = "Skor";
-            // 
-            // SkorBtn
-            // 
-            this.SkorBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SkorBtn.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.SkorBtn.Location = new System.Drawing.Point(863, 33);
-            this.SkorBtn.Name = "SkorBtn";
-            this.SkorBtn.Size = new System.Drawing.Size(167, 48);
-            this.SkorBtn.TabIndex = 3;
-            this.SkorBtn.Text = "En İyi Skorlar";
-            this.SkorBtn.UseVisualStyleBackColor = true;
-            // 
-            // SkorShowLb
-            // 
-            this.SkorShowLb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SkorShowLb.AutoSize = true;
-            this.SkorShowLb.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.SkorShowLb.Location = new System.Drawing.Point(1160, 63);
-            this.SkorShowLb.Name = "SkorShowLb";
-            this.SkorShowLb.Size = new System.Drawing.Size(52, 17);
-            this.SkorShowLb.TabIndex = 4;
-            this.SkorShowLb.Text = "label3";
             // 
             // AnaEkran
             // 
@@ -126,7 +127,7 @@
             this.Name = "AnaEkran";
             this.Text = "Kayısı Adam Oyunu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AnaEkran_KeyDown);
             this.BilgiPl.ResumeLayout(false);
             this.BilgiPl.PerformLayout();
             this.ResumeLayout(false);

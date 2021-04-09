@@ -1,25 +1,42 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using OyunKutuphanesi.Concrete;
+using OyunKutuphanesi.Enum;
 using System.Windows.Forms;
-
+//Özeyir Özatila B171200014
 namespace KayısıAdamOyunu
 {
     public partial class AnaEkran : Form
     {
+        private readonly Oyun _oyun = new Oyun();
         public AnaEkran()
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
+      
+        private void AnaEkran_KeyDown(object sender,KeyEventArgs e)
         {
-             
+            MessageBox.Show(e.KeyCode.ToString());
+           /*     switch(e.KeyCode)
+            {
+                case Keys.Enter:
+
+                    _oyun.Baslat();
+                    break;
+                case Keys.Right:
+                    _oyun.Haraket(Yon.Sag);
+                    break;
+                case Keys.Left:
+                    _oyun.Haraket(Yon.Sol);
+                    break;
+                case Keys.Space:
+                    _oyun.Firlat();
+                    break;
+                case Keys.CapsLock:
+                    _oyun.Duraklat();
+                    break;
+            }*/
         }
+
+     
     }
 }
